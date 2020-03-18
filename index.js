@@ -25,8 +25,8 @@ app.get('/', function (req, res) {
 
 // Serve the static files from the React app
 
-app.use(express.static(path.join(__dirname, 'app_frontend/public')));
-
+//app.use(express.static(path.join(__dirname, 'app_frontend/public')));
+app.use(express.static(path.join(__dirname, 'build')));
 // An api endpoint that returns a short list of items
 
 /** it was before start deploying app
